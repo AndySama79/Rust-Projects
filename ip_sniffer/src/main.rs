@@ -17,7 +17,7 @@ struct Arguments {
 impl Arguments {
     fn new(args: &[String]) -> Result<Arguments, &'static str> {
         if args.len() < 2 {
-            return Err("not enought arguments");
+            return Err("not enough arguments");
         }
         else if args.len() > 4 {
             return Err("too many arguments");
